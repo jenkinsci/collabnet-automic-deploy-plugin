@@ -50,12 +50,15 @@ public class AssignComponent extends AbstractFeature {
 			Result exportPackageResult = importExportService.export(usernameValue, passwordValue, "Package", "", 0, 10, "XML", properties, "", "", conditions);
 			exportPackageResult = handleResult(exportPackageResult, importExportService);
 			
-			//find application id
-			String applicationId = getNodeValue(exportPackageResult, "Property", "name", "system_application.system_id");
+			//find application name
+        		String applicationName = getNodeValue(exportPackageResult, "Property", "name", "system_application.system_name");
+	        	if (applicationName != null) {
+                            applicationName = applicationName.trim();
+                        }
 			
 			//export component id
-			properties = new String[]{};
-			conditions = new String[]{"system_name eq '" + componentValue + "'", "system_application.system_id eq '" + applicationId + "'"};
+			properties = new String[]{"system_id"};
+			conditions = new String[]{"system_name eq '" + componentValue + "'", "system_application.system_name eq '" + applicationName + "'"};
 			Result exportComponenteResult = importExportService.export(usernameValue, passwordValue, "Component", "", 0, 10, "XML", properties, "", "", conditions);
 			exportComponenteResult = handleResult(exportComponenteResult, importExportService);
 

@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>collabnet-uc4-deploy</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>Collabnet UC4 Deploy Plugin</name>
     <description>Plugin to do continuous deployment with UC4 triggered by Collabnet Teamforge commits</description>
     <packaging>hpi</packaging>

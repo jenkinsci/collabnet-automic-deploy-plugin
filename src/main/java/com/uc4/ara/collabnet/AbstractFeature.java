@@ -1,6 +1,7 @@
 package com.uc4.ara.collabnet;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.rmi.UnexpectedException;
@@ -12,6 +13,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import com.uc4.ara.collabnet.JArgs.CmdLineParser;
@@ -78,7 +80,7 @@ public abstract class AbstractFeature {
 		FileWriter writer = new FileWriter(newFile);
 		writer.write(result.getData());
 		writer.close();
-		Document document = builder.parse(newFile);
+                Document document = builder.parse(new InputSource(new FileReader(fileName)));
 		newFile.delete();
 		return document;
 	}
