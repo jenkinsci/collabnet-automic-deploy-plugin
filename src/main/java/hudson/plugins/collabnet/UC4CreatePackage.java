@@ -329,7 +329,7 @@ public class UC4CreatePackage extends Notifier {
 
         @Override
         public String getDisplayName() {
-            return "Set UC4 RM Properties";
+            return "Set Automic RM Properties";
         }
     }
 }

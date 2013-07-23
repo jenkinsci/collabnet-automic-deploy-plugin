@@ -10,10 +10,10 @@
         <version>1.399</version>
     </parent>
 
-    <artifactId>collabnet-uc4-deploy</artifactId>
+    <artifactId>collabnet-automic-deploy</artifactId>
     <version>1.0.1</version>
-    <name>Collabnet UC4 Deploy Plugin</name>
-    <description>Plugin to do continuous deployment with UC4 triggered by Collabnet Teamforge commits</description>
+    <name>Collabnet Automic Deploy Plugin</name>
+    <description>Plugin to do continuous deployment with Automic triggered by Collabnet Teamforge commits</description>
     <packaging>hpi</packaging>
 
     <developers>
@@ -109,8 +109,8 @@
     </dependencies>
 
     <scm>
-        <connection>scm:git:ssh://github.com/jenkinsci/collabnet-uc4-deploy-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:jenkinsci/collabnet-uc4-deploy-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/collabnet-uc4-deploy-plugin</url>
+        <connection>scm:git:ssh://github.com/jenkinsci/collabnet-automic-deploy-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:jenkinsci/collabnet-automic-deploy-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/collabnet-automic-deploy-plugin</url>
     </scm>
 </project>

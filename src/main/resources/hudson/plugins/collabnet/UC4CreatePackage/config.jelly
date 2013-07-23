@@ -21,11 +21,11 @@
       <f:password />
   </f:entry>
 
-  <f:entry title="UC4 Package Name" field="packageName">
+  <f:entry title="Automic Package Name" field="packageName">
     <f:textbox />
   </f:entry>
 
-  <f:entry title="UC4 Application Name" field="applicationName">
+  <f:entry title="Automic Application Name" field="applicationName">
     <f:textbox />
   </f:entry>
 
