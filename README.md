@@ -10,7 +10,7 @@ Please refer to http://www.collab.net/deploy for the complete details on the int
 #### Screenshots
 <div>
 <b>Jenkins Configuration of a Job with the Collabnet Automic Deploy plugin</b>
-<img src="http://rajasaur.github.com/rb-extension-pack/screenshots/jenkins_plugin.png" width=800 height=500" /> 
+<img src="http://rajasaur.github.io/rb-extension-pack/screenshots/automic_jenkins_configure.png" width=800 height=500" /> 
 </div>
 
 
